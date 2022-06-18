@@ -1,7 +1,7 @@
 # csgo-macros
 CS:GO Macros desktop application built with Electron
 # Installation
-You can download the latest stable release. Also.
+You can download the latest stable release.
 
 The downloaded .zip folder will contain an executable file.
 
