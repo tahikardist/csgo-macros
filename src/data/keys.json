@@ -1,0 +1,70 @@
+[
+  {
+    "name": "P90",
+    "type": "smg"
+  },
+  {
+    "name": "UMP",
+    "type": "smg"
+  },
+  {
+    "name": "FAMAS",
+    "type": "smg"
+  },
+  {
+    "name": "BIZON",
+    "type": "smg"
+  },
+  {
+    "name": "MP5",
+    "type": "smg"
+  },
+  {
+    "name": "MP7",
+    "type": "smg"
+  },
+  {
+    "name": "MP9",
+    "type": "smg"
+  },
+  {
+    "name": "MAC-10",
+    "type": "smg"
+  },
+  {
+    "name": "CZ-75",
+    "type": "smg"
+  },
+  {
+    "name": "AK47",
+    "type": "rifle"
+  },
+  {
+    "name": "M4A1-S",
+    "type": "rifle"
+  },
+  {
+    "name": "M4A4",
+    "type": "rifle"
+  },
+  {
+    "name": "GALIL",
+    "type": "rifle"
+  },
+  {
+    "name": "AUG",
+    "type": "rifle"
+  },
+  {
+    "name": "SG-553",
+    "type": "rifle"
+  },
+  {
+    "name": "M-249",
+    "type": "rifle"
+  },
+  {
+    "name": "NEGEV",
+    "type": "rifle"
+  }
+]

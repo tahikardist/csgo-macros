@@ -1,0 +1,107 @@
+{
+  "weapons": {
+    "P90": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "P90-showedKey"
+    },
+    "UMP": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "UMP-showedKey"
+    },
+    "FAMAS": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "FAMAS-showedKey"
+    },
+    "BIZON": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "BIZON-showedKey"
+    },
+    "MP5": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "MP5-showedKey"
+    },
+    "MP7": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "MP7-showedKey"
+    },
+    "MP9": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "MP9-showedKey"
+    },
+    "MAC-10": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "MAC-10-showedKey"
+    },
+    "CZ-75": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "CZ-75-showedKey"
+    },
+    "AK47": {
+      "key": "F4",
+      "alias": "F4",
+      "dataTarget": "AK47-showedKey"
+    },
+    "M4A1-S": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "M4A1-S-showedKey"
+    },
+    "M4A4": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "M4A4-showedKey"
+    },
+    "GALIL": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "GALIL-showedKey"
+    },
+    "AUG": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "AUG-showedKey"
+    },
+    "SG-553": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "SG-553-showedKey"
+    },
+    "M-249": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "M-249-showedKey"
+    },
+    "NEGEV": {
+      "key": null,
+      "alias": null,
+      "dataTarget": "NEGEV-showedKey"
+    }
+  },
+  "misc": {
+    "sensitive": "2",
+    "fastzoom": false,
+    "delay": "50",
+    "crosshair": {
+      "value": false,
+      "type": null
+    },
+    "sound": true,
+    "noRecoil": {
+      "key": "F6",
+      "alias": "F6"
+    },
+    "resetActiveWeapon": {
+      "key": "F7",
+      "alias": "F7"
+    }
+  }
+}

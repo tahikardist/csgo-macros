@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-pro-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="module" src="js/tabs.js" defer></script>
+    <script type="module" src="js/listeners.js" defer></script>
+    <script type="module" src="js/renderer.js" defer></script>
+    <script type="module" src="js/hotkeys.js" defer></script>
+    <script src="fontawesome-pro-6.1.1-web/js/all.min.js" defer></script>
+    <title>CS:GO Macros by hiddenLadder</title>
+</head>
+<body class="bg-[#26272C]">
+<header>
+    <div class="titlebar text-[#E2E2E2] p-2">
+        CS:GO Macros by hiddenLadder
+    </div>
+</header>
+<main>
+    <section>
+        <nav class="bg-[#1C1B21]">
+            <ul class="flex flex justify-center justify-around text-center text-white">
+                <li data-target="smgs-content"
+                    class="flex-1 flex justify-center items-center p-4 text-3xl border-b-[5px] border-rose-500 text-white ease-in-out transition-[border] duration-150 hover:border-b-[5px] hover:border-rose-500 hover:text-white">
+                    <i class="fa-solid fa-gun"></i>
+                </li>
+                <li data-target="rifles-content"
+                    class="flex-1 flex justify-center items-center p-4 text-3xl text-gray-400 ease-in-out transition-[border] duration-150 hover:border-b-[5px] hover:border-rose-500 hover:text-white">
+                    <i class="fa-solid fa-child-rifle"></i></li>
+                <li data-target="misc-content"
+                    class="flex-1 flex justify-center items-center p-4 text-3xl text-gray-400 ease-in-out transition-[border] duration-150 hover:border-b-[5px] hover:border-rose-500 hover:text-white">
+                    <i class="fa-light fa-circle-ellipsis"></i>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <div id="smgs-content" class="block p-3 flex flex-wrap gap-6">
+    </div>
+
+    <div id="rifles-content" class="hidden p-3 flex flex-wrap gap-6">
+    </div>
+
+    <div id="misc-content" class="hidden p-3 flex flex-wrap gap-2">
+        <div id="fastzoom-info"
+             class="hidden z-10 fixed top-40 left-10 flex h-60 w-52 flex-col rounded-lg border-2 border-rose-500 bg-[#1C1B21] p-3 text-white shadow-lg shadow-rose-500 drop-shadow-lg">
+            <h2>Fastzoom</h2>
+            <div class="text-[12px]">
+                <p>Кнопка выстрела: Alt.</p>
+                <p>Фастзум создан для awp и ssg. Быстро зумится, стреляет и нажимает два раза "q".</p>
+            </div>
+            <h2>Задержка</h2>
+            <div class="text-[12px]">
+                <p>Задержка между зумом и выстрелом. Чем больше задержка, тем точнее получится выстрел.</p>
+            </div>
+        </div>
+        <div class="flex h-60 w-64 flex-col items-center rounded-lg bg-[#1C1B21] p-6 font-medium uppercase text-[#E2E2E2]">
+            <span id="fastzoom-hover"
+                  class="fixed -translate-y-3 translate-x-3 cursor-default self-end rounded-full border px-2 hover:text-rose-500 hover:border-rose-500">?</span>
+            <p class="text-sm">awp / ssg</p>
+            <p class="text-sm">fastzoom</p>
+            <div class="flex w-full items-center justify-center">
+                <label class="group relative flex items-center justify-between p-2 text-xl">
+                    <input data-fastzoom type="checkbox"
+                           class="peer absolute left-1/2 h-full w-full -translate-x-1/2 appearance-none rounded-md"/>
+                    <span class="flex h-6 w-14 flex-shrink-0 items-center rounded-full bg-gray-300 p-1 duration-300 ease-in-out after:h-4 after:w-4 after:rounded-full after:bg-white after:shadow-md after:duration-300 group-hover:after:translate-x-1 peer-checked:bg-rose-500 peer-checked:after:translate-x-8"> </span>
+                </label>
+            </div>
+            <p class="text-xs text-[#56555A]">задержка / мс</p>
+            <div data-delay-buttons class="flex flex-wrap gap-4 pt-6">
+                <button data-delay="50"
+                        class="flex-1 border-2 border-[#1C1B21] rounded-md bg-[#26272C] px-8 py-[0.125rem]">50
+                </button>
+                <button data-delay="150"
+                        class="flex-1 border-2 border-[#1C1B21] rounded-md bg-[#26272C] px-8 py-[0.125rem]">150
+                </button>
+                <button data-delay="250"
+                        class="flex-1 border-2 border-[#1C1B21] rounded-md bg-[#26272C] px-8 py-[0.125rem]">250
+                </button>
+                <button data-delay="350"
+                        class="flex-1 border-2 border-[#1C1B21] rounded-md bg-[#26272C] px-8 py-[0.125rem]">350
+                </button>
+            </div>
+        </div>
+        <div class="flex h-64 w-36 flex-col items-center rounded-lg bg-[#1C1B21] p-6 font-medium uppercase text-[#E2E2E2]">
+            <p>прицел</p>
+            <div class="flex w-full items-center justify-center">
+                <label class="group relative flex items-center justify-between p-2 text-xl">
+                    <input data-crosshair type="checkbox"
+                           class="peer absolute left-1/2 h-full w-full -translate-x-1/2 appearance-none rounded-md"/>
+                    <span class="flex h-6 w-14 flex-shrink-0 items-center rounded-full bg-gray-300 p-1 duration-300 ease-in-out after:h-4 after:w-4 after:rounded-full after:bg-white after:shadow-md after:duration-300 group-hover:after:translate-x-1 peer-checked:bg-rose-500 peer-checked:after:translate-x-8"> </span>
+                </label>
+            </div>
+            <p class="text-xs text-rose-500">вид прицела</p>
+            <div class="flex gap-4 pt-4 text-[#77767A] text-3xl">
+                <i data-crosshair-circe class="fa-light fa-circle hover:text-white"></i>
+                <i data-crosshair-dot class="-translate-y-2 fa-solid fa-period hover:text-white"></i>
+                <i data-crosshair-q class="fa-solid fa-q hover:text-white"></i>
+            </div>
+            <div class="flex gap-4 pt-4 text-[#77767A] text-3xl">
+                <i data-crosshair-light-crosshairs class="fa-light fa-crosshairs hover:text-white"></i>
+                <i data-crosshair-duotone-crosshairs class="fa-duotone fa-crosshairs hover:text-white"></i>
+            </div>
+        </div>
+    </div>
+</main>
+<div id="rightBar"
+     class="rightBar fixed top-10 bottom-0 right-0 z-30 border-l-4 border-rose-500 flex min-h-auto w-5/6 bg-[#26272C] text-[13px] font-medium uppercase tracking-widest text-[#6C6C70]">
+    <div class="flex flex-1 flex-col p-4 justify-between">
+        <div class="flex flex-col">
+            <p>Чувствительность мыши</p>
+            <div class="mb-2 mt-1 flex justify-between gap-2 rounded-lg bg-[#1C1B21] py-3 px-6">
+                <p data-sensitive class="-translate-y-[0.125rem] text-lg font-bold">2.0</p>
+                <input id="input-sensitive" type="range" min="1" max="2.5" value="2" step="0.1"
+                       class="h-0.5 w-full appearance-none self-center bg-gradient-to-r from-sky-500 to-fuchsia-500"/>
+            </div>
+        </div>
+        <button id="rightBarButton"
+                class="w-28 border-2 border-rose-500 rounded-full px-6 py-2 text-rose-500 uppercase hover:bg-rose-500 hover:text-white active:bg-rose-900 active:border-rose-900 transition-all duration-150 ease-in-out">
+            ок
+        </button>
+    </div>
+    <div class="flex flex-1 flex-col border-l-[6px] border-[#222327] p-4">
+        <div class="flex flex-col">
+            <p class="self-start">антиотдача вкл/выкл</p>
+            <div class="mb-2 mt-1 flex justify-between gap-4 rounded-lg bg-[#1C1B21] p-3 px-10">
+                <p data-noRecoil>кнопка</p>
+                <button data-type="misc" data-value="noRecoil" id="no-recoil-button" class="uppercase text-rose-500">
+                    назначить
+                </button>
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <p class="self-start">сброс активного оружия</p>
+            <div class="mb-2 mt-1 flex justify-between gap-4 rounded-lg bg-[#1C1B21] p-3 px-10">
+                <p data-resetActiveWeapon>кнопка</p>
+                <button data-type="misc" data-value="resetActiveWeapon" id="reset-active-weapon"
+                        class="uppercase text-rose-500">назначить
+                </button>
+            </div>
+        </div>
+        <div class="rounded-lg bg-[#1C1B21]">
+            <div class="flex w-full items-center justify-start">
+                <label class="group relative flex items-center justify-between p-[0.6rem] text-xl">
+                    <input data-sound id="input-sound" type="checkbox"
+                           class="peer absolute left-1/2 h-full w-full -translate-x-1/2 appearance-none rounded-md"/>
+                    <span class="flex h-6 w-14 flex-shrink-0 items-center rounded-full bg-gray-300 p-1 duration-300 ease-in-out after:h-4 after:w-4 after:rounded-full after:bg-white after:shadow-md after:duration-300 group-hover:after:translate-x-1 peer-checked:bg-rose-500 peer-checked:after:translate-x-8"> </span>
+                </label>
+                <p class="tracking-wider">звук вкл/выкл</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="settings-button"
+     class="fixed z-20 right-2 bottom-2 cursor-pointer rounded-lg bg-[#1C1B21] p-3 text-[0.9rem] font-medium uppercase tracking-[.15rem] text-gray-500 shadow-lg transition-[color, translate] delay-75 duration-150 hover:text-white hover:-translate-y-1">
+    <i class="fa-solid fa-gear"></i>
+    настройки
+</div>
+</body>
+</html>

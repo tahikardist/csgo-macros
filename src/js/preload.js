@@ -1,0 +1,1 @@
+// due to some problems with iohook and robotjs libraries this script is empty

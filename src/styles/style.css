@@ -1,0 +1,39 @@
+html {
+    -webkit-user-select: none;
+}
+
+.titlebar {
+    background-color: #1C1B21;
+    height: 40px;
+    border-bottom: 2px solid #18171D;
+    -webkit-app-region: drag;    /* Allow user to drag the window using this titlebar */
+    -webkit-user-select: none;   /* Prevent user from selecting things */
+    user-select: none;
+}
+
+.rightBar {
+    right: -100%;
+}
+
+.appearRightBar {
+    animation: appear 0.5s ease-in-out forwards;
+}
+
+.disappearRightBar {
+    animation: disappear 0.5s ease-in-out forwards;
+}
+
+@keyframes appear {
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -100%;
+    }
+}
